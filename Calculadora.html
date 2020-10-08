@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Calculadora Perfeita</title>
+    <script>
+        function soma(){
+            var numero1 = parseInt(document.getElementeById('n1').value);
+            var numero2 = parseInt(document.getElementById('n2').value);
+            
+         
+            var resultado = numero1 + numero2;
+            document.getElementById('result').value = resultado;
+        }
+
+
+        function sub(){
+            var numero1 = parseInt(document.getElementById('n1').value);
+            var numero2 = parseInt(document.getElementById('n2').value);
+            var resultado = numero1 - numero2;
+            document.getElementById('result').value = resultado;
+        }
+
+
+        function multi(){
+            var numero1 = parseInt(document.getElementById('n1').value);
+            var numero2 = parseInt(document.getElementById('n2').value);
+            var resultado = numero1 * numero2;
+            document.getElementById('result').value = resultado;
+
+        }
+
+        function divis(){
+            var numero1 = parseInt(document.getElementById('n1').value);
+            var numero2 = parseInt(document.getElementById('n2').value);
+            var resultado = numero1/numero2;
+            document.getElementById('result').value = resultado;
+        }
+
+        function raiz(){
+            var numero1 = parseInt(document.getElementById('n1').value);
+            var resultado = Math.sqrt(numero1);
+            document.getElementById('result').value = resultado;
+
+        }
+
+        function sin(){
+            var numero1 = parseInt(document.getElementById('n1').value);
+            var resultado = Math.sin(numero1);
+            document.getElementById('result').value = resultado;
+
+        }
+
+
+        function cos(){
+            var numero1 = parseInt(document.getElementById('n1').value);
+            var resultado = Math.cos(numero1);
+            document.getElementById('result').value = resultado;
+        
+        }
+
+        function tan(){
+            var numero1 = parseInt(document.getElementById('n1').value);
+            var resultado = Math.tan(numero1);
+            document.getElementById('result').value = resultado;
+
+        }
+
+        window.onload = function(){
+            alert("Bem vindo a Calculadora! Todos os números devem ser inteiros");
+        }
+    
+
+        </script>
+    </head>
+    
+ <body>
+     <form>
+            <div style="text-align: justify;">
+            Calculadora Completa <br>
+            <input type="number" name="n1" id="n1">
+            <input type="button" value="+" onclick="soma();">
+            <input type="button" value="-" onclick="sub();">
+            <input type="button" value="*" onclick="multi();">
+            <input type="button" value="/" onclick="divis();">
+            <input type="button" value="Raiz" onclick="raiz();">
+            <input type="button" value="Seno" onclick="sin();">
+            <input type="button" value="Coseno" onclick="cos();">
+            <input type="button" value="Tangente" onclick="tan();">
+            <input type="number" name="n2" id="n2">
+            =
+            <input type="number" name="resultado" id="result">
+
+        
+            
+            
+            
+            </div>
+
+
+
+     </form>
+
+
+ </body> 
+
+
+</html>
